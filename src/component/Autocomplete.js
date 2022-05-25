@@ -26,10 +26,8 @@ const AutoComplete = () => {
   };
 
   const handleMaxWidthChange = (event) => {
-    setMaxWidth(
-     
-      event.target.value,
-    );
+    setMaxWidth(event.target.value);
+    setFullWidth(true);
   };
 
   const options = top100Films.map((option) => {

@@ -35,10 +35,8 @@ const Accordian = () => {
   };
 
   const handleMaxWidthChange = (event) => {
-    setMaxWidth(
-     
-      event.target.value,
-    );
+    setMaxWidth(event.target.value);
+    setFullWidth(true);
   };
 
   

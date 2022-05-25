@@ -10,7 +10,6 @@ import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
-import Backdrop from '@mui/material/Backdrop';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormLabel from '@mui/material/FormLabel';
 import Radio from '@mui/material/Radio';
@@ -70,10 +69,8 @@ const SpeedDials = () => {
   };
 
   const handleMaxWidthChange = (event) => {
-    setMaxWidth(
-     
-      event.target.value,
-    );
+    setMaxWidth(event.target.value);
+    setFullWidth(true);
   };
   return (
     <>

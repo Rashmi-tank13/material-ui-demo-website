@@ -17,7 +17,7 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -54,10 +54,8 @@ const Appbar = () => {
   };
 
   const handleMaxWidthChange = (event) => {
-    setMaxWidth(
-     
-      event.target.value,
-    );
+    setMaxWidth(event.target.value);
+    setFullWidth(true);
   };
   return (
     <>
